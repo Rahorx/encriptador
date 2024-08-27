@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="./assets/Frame 6.png" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea id="area-texto" class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+
+            <div>
+                <h6 class="aviso">Apenas letras minúsculas e sem acento</h6>
+            </div>
+
+            <div class="buttons">
+                <button class="button-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="button-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="resultado" cols="20" rows="10" id="meutexto"></textarea>
+            <button id="copiartexto" class="button-copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
